@@ -1,0 +1,32 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit"
+  },
+  "files.trimTrailingWhitespace": false,
+  "files.trimFinalNewlines": false,
+  "files.insertFinalNewline": true,
+  "cursor.general.enableShadowWorkspace": true,
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "claudeCode.disableLoginPrompt": true,
+  "claudeCode.environmentVariables": [
+    {
+      "name": "ANTHROPIC_AUTH_TOKEN",
+      "value": "cr_ac812812b8d4c18217d8649bdf72ec088e1e3a3ccc8ce17cb41dbbcd14159f15"
+    },
+    {
+      "name": "ANTHROPIC_BASE_URL",
+      "value": "http://52.9.160.103:13000/api"
+    }
+  ]
+}

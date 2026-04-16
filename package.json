@@ -7,6 +7,9 @@
     "dev:server": "cd server && npm run dev",
     "install:all": "cd client && npm install && cd ../server && npm install"
   },
+  "dependencies": {
+    "openai": "^4.47.0"
+  },
   "devDependencies": {
     "concurrently": "^9.0.0"
   }

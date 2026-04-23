@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref, nextTick } from 'vue'
+
+const isEmbed = new URLSearchParams(window.location.search).has('embed')
 import type { Message } from './types'
 import MessageBubble from './components/MessageBubble.vue'
 import ChatInput from './components/ChatInput.vue'
@@ -90,7 +92,7 @@ const sendMessage = async (content: string) => {
 
 <template>
   <div class="chat-app">
-    <header class="chat-header">
+    <header v-if="!isEmbed" class="chat-header">
       <div class="header-inner">
         <div class="ai-avatar">AI</div>
         <div>
